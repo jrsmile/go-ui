@@ -1,3 +1,11 @@
+<clr-alert [clrAlertAppLevel]="true">
+  <clr-alert-item>
+    <span class="alert-text">
+      Congratulations, you are using GoUI!
+    </span>
+  </clr-alert-item>
+</clr-alert>
+
   <div class="main-container">
     <header class="header-6">
       <div class="branding">
@@ -11,7 +19,17 @@
       </div>
   </header>
   <div class="content-container">
+    <clr-vertical-nav>
+      <a clrVerticalNavLink routerLink="./charmander" routerLinkActive="active">Charmander</a>
+      <a clrVerticalNavLink routerLink="./jigglypuff" routerLinkActive="active">Jigglypuff</a>
+      <a clrVerticalNavLink routerLink="./pikachu" routerLinkActive="active">Pikachu</a>
+      <a clrVerticalNavLink routerLink="./raichu" routerLinkActive="active">Raichu</a>
+      <a clrVerticalNavLink routerLink="./snorlax" routerLinkActive="active">Snorlax</a>
+      <div class="nav-divider"></div>
+      <a clrVerticalNavLink routerLink="./credit" routerLinkActive="active">Credit</a>
+  </clr-vertical-nav>
     <div class="content-area">
+      <clr-progress-bar clrValue="75" clrLoop></clr-progress-bar>
       <clr-datagrid>
         <clr-dg-column>Blogger's Name</clr-dg-column>
         <clr-dg-column>Blog URL</clr-dg-column>
@@ -24,16 +42,285 @@
         </clr-dg-row>
     
         <clr-dg-footer>{{people.length}} users</clr-dg-footer>
-    </clr-datagrid>
+      </clr-datagrid>
+      <div class="clr-row">
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-danger" disabled>Disabled</button>
+      <button class="btn btn-outline">Regular</button>
+      <button class="btn btn-success-outline">Success-Outline</button>
+      <button class="btn btn-info-outline">Info</button>
+      <button class="btn btn-warning-outline">Warning</button>
+      <button class="btn btn-danger-outline">Danger</button>
+      <button class="btn btn-outline" disabled>Disabled</button>
+      <button class="btn btn-link">Regular</button>
+      <button class="btn btn-link" disabled>Disabled</button>
+      <button class="btn btn-sm btn-link">Regular</button>
+      <button class="btn btn-sm btn-link" disabled>Disabled</button>
+      <button class="btn btn-info-outline">Info</button>
+      <button class="btn btn-success-outline">Success</button>
+      <button class="btn btn-danger-outline">Danger</button>
+
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-sm">Regular</button>
+      <button class="btn btn-primary btn-sm">Primary</button>
+      <button class="btn btn-success btn-sm">Success</button>
+      <button class="btn btn-info btn-sm">Info</button>
+      <button class="btn btn-warning btn-sm">Warning</button>
+      <button class="btn btn-danger btn-sm">Danger</button>
+      <button class="btn btn-sm" disabled>Disabled</button>
+      <button type="button" class="btn btn-icon" aria-label="home">
+        <cds-icon shape="home"></cds-icon>
+      </button>
+      <button type="button" class="btn btn-icon btn-primary" aria-label="settings">
+        <cds-icon shape="cog"></cds-icon>
+      </button>
+      <button type="button" class="btn btn-icon btn-warning" aria-label="warning">
+        <cds-icon shape="warning-standard"></cds-icon>
+      </button>
+      <button type="button" class="btn btn-icon btn-danger" aria-label="error">
+        <cds-icon shape="error-standard"></cds-icon>
+      </button>
+      <button type="button" class="btn btn-icon btn-success" aria-label="done">
+        <cds-icon shape="check"></cds-icon>
+      </button>
+      <button type="button" class="btn btn-icon" disabled aria-label="home">
+        <cds-icon shape="home"></cds-icon>
+      </button>
+      <clr-spinner clrInverse>
+        Downloading
+      </clr-spinner>
     </div>
-    <clr-vertical-nav>
-        <a clrVerticalNavLink routerLink="./charmander" routerLinkActive="active">Charmander</a>
-        <a clrVerticalNavLink routerLink="./jigglypuff" routerLinkActive="active">Jigglypuff</a>
-        <a clrVerticalNavLink routerLink="./pikachu" routerLinkActive="active">Pikachu</a>
-        <a clrVerticalNavLink routerLink="./raichu" routerLinkActive="active">Raichu</a>
-        <a clrVerticalNavLink routerLink="./snorlax" routerLinkActive="active">Snorlax</a>
-        <div class="nav-divider"></div>
-        <a clrVerticalNavLink routerLink="./credit" routerLinkActive="active">Credit</a>
-    </clr-vertical-nav>
-</div>
+    <div class="clr-row">
+      <div class="clr-col-lg-4 clr-col-sm-6 clr-col-12">
+          <div class="card">
+              <h3 class="card-header">Unordered Lists</h3>
+              <div class="card-block">
+                  ...
+              </div>
+              <div class="card-block">
+                  <ul class="list">
+                      <li>Ullamco Laboris</li>
+                      <li>
+                          Nisi Ut Aliquip
+                          <ul class="list">
+                              <li>Exercitation</li>
+                              <li>Laboris</li>
+                              <li>Commodo</li>
+                          </ul>
+                      </li>
+                      <li>Consequat</li>
+                      <li>Excepteur sint occaecat cupidatat non proident</li>
+                      <li>Enim ad Minim</li>
+                      <li>
+                          Occeaecat
+                          <ul class="list-unstyled">
+                              <li>Exercitation</li>
+                              <li>Laboris</li>
+                              <li>Commodo</li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+              <div class="card-footer">
+                  <a class="btn btn-primary">Action</a>
+              </div>
+          </div>
+      </div>
+      <div class="clr-col-lg-4 clr-col-sm-6 clr-col-12">
+          <div class="card">
+              <h3 class="card-header">Ordered Lists</h3>
+              <div class="card-block">
+                  ...
+              </div>
+              <div class="card-block">
+                  <ol class="list">
+                      <li>Ullamco Laboris</li>
+                      <li>
+                          Nisi Ut Aliquip
+                          <ol class="list">
+                              <li>Exercitation</li>
+                              <li>Laboris</li>
+                              <li>Commodo</li>
+                          </ol>
+                      </li>
+                      <li>Consequat</li>
+                      <li>Excepteur sint occaecat cupidatat non proident</li>
+                      <li>Enim ad Minim</li>
+                      <li>
+                          Occeaecat
+                          <ol class="list-unstyled">
+                              <li>Exercitation</li>
+                              <li>Laboris</li>
+                              <li>Commodo</li>
+                          </ol>
+                      </li>
+                  </ol>
+              </div>
+              <div class="card-footer">
+                  <a class="btn btn-primary">Action</a>
+              </div>
+          </div>
+      </div>
+      <div class="clr-col-lg-4 clr-col-sm-6 clr-col-12">
+          <div class="card">
+              <h3 class="card-header">Unstyled Lists</h3>
+              <div class="card-block">
+                  <p class="card-text">
+                      ...
+                  </p>
+              </div>
+              <div class="card-block">
+                  <ul class="list-unstyled">
+                      <li>Ullamco Laboris</li>
+                      <li>
+                          Nisi Ut Aliquip
+                          <ul class="list">
+                              <li>Exercitation</li>
+                              <li>Laboris</li>
+                              <li>Commodo</li>
+                          </ul>
+                      </li>
+                      <li>Consequat</li>
+                      <li>Excepteur sint occaecat cupidatat non proident</li>
+                      <li>Enim ad Minim</li>
+                      <li>
+                          Occeaecat
+                          <ul class="list-unstyled">
+                              <li>Exercitation</li>
+                              <li>Laboris</li>
+                              <li>Commodo</li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+              <div class="card-footer">
+                  <a class="btn btn-primary">Action</a>
+              </div>
+          </div>
+      </div>
   </div>
+  <div class="clr-row">
+    <div class="stack-view">
+    <div class="stack-block">
+        <div class="stack-block-label">
+            <div class="stack-view-key" aria-level="1" aria-posinset="1" aria-setsize="3">
+                Label 1
+            </div>
+            <div class="stack-block-content">Content 1</div>
+        </div>
+    </div>
+    <div class="stack-block stack-block-expandable stack-block-expanded">
+        <div class="stack-block-label">
+            <div class="stack-view-key" aria-level="1" aria-posinset="2" aria-setsize="3">
+                Label 2
+            </div>
+            <div class="stack-block-content">Content 2</div>
+        </div>
+        <div class="stack-children">
+            <div class="stack-block">
+                <div class="stack-block-label">
+                    <div class="stack-view-key">
+                        Sub-label 1
+                    </div>
+                    <div class="stack-block-content">Sub-content 1</div>
+                </div>
+            </div>
+            <div class="stack-block">
+                <div class="stack-block-label">
+                    <div class="stack-view-key" >
+                        Sub-label 2
+                    </div>
+                    <div class="stack-block-content">Sub-content 2</div>
+                </div>
+            </div>
+            <div class="stack-block">
+                <div class="stack-block-label">
+                    <div class="stack-view-key">
+                        Sub-label 3
+                    </div>
+                    <div class="stack-block-content">Sub-content 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stack-block stack-block-expandable">
+        <div class="stack-block-label">
+            <div class="stack-view-key" aria-level="1" aria-posinset="3" aria-setsize="3">
+                Label 3
+            </div>
+            <div class="stack-block-content">Content 3</div>
+        </div>
+        <div class="stack-children"></div>
+    </div>
+    </div>
+    <clr-toggle-container>
+      <clr-toggle-wrapper>
+        <input type="checkbox" clrToggle value="option1" name="options" />
+        <label>Option 1</label>
+      </clr-toggle-wrapper>
+      <clr-toggle-wrapper>
+        <input type="checkbox" clrToggle value="option2" name="options" />
+        <label>Option 2</label>
+      </clr-toggle-wrapper>
+    </clr-toggle-container>
+  </div>
+  <div class="clr-row">
+    <ul class="clr-timeline">
+      <li class="clr-timeline-step disabled">
+        <div class="clr-timeline-step-header">11:59 am</div>
+        <cds-icon role="img" shape="circle" aria-label="Not started"></cds-icon>
+        <div class="clr-timeline-step-body">
+          <span class="clr-timeline-step-title">Add KMS</span>
+          <span class="clr-timeline-step-description">Root CA certificate requested.</span>
+        </div>
+      </li>
+      <li class="clr-timeline-step">
+        <div class="clr-timeline-step-header">11:59 am</div>
+        <cds-icon role="img" shape="dot-circle" aria-label="Current"></cds-icon>
+        <div class="clr-timeline-step-body">
+          <span class="clr-timeline-step-title">Add KMS</span>
+          <span class="clr-timeline-step-description">
+        Root CA certificate requested. Upload it to the KMS to complete the connection.
+        <button class="btn btn-sm">Action</button>
+      </span>
+        </div>
+      </li>
+      <li class="clr-timeline-step">
+        <div class="clr-timeline-step-header">11:59 am</div>
+        <clr-spinner clrMedium aria-label="In progress">Fetching data</clr-spinner>
+        <div class="clr-timeline-step-body">
+          <span class="clr-timeline-step-title">Make vCenter trust KMS</span>
+          <span class="clr-timeline-step-description">
+        Root CA certificate requested. Upload it to the KMS to complete the connection. Third sentence is very long
+        and very long.
+      </span>
+        </div>
+      </li>
+      <li class="clr-timeline-step">
+        <div class="clr-timeline-step-header">11:59 am</div>
+        <cds-icon role="img" shape="success-standard" aria-label="Completed"></cds-icon>
+        <div class="clr-timeline-step-body">
+          <span class="clr-timeline-step-title">Make KMS trust vCenter</span>
+          <span class="clr-timeline-step-description">Upload it to the KMS to complete the connection. Third
+        sentence.
+        <button class="btn btn-sm btn-link">Action</button>
+      </span>
+        </div>
+      </li>
+      <li class="clr-timeline-step">
+        <div class="clr-timeline-step-header">11:59 am</div>
+        <cds-icon role="img" shape="error-standard" aria-label="Error"></cds-icon>
+        <div class="clr-timeline-step-body">
+          <span class="clr-timeline-step-title">Connected</span>
+          <span class="clr-timeline-step-description">No. It's not connected.</span>
+        </div>
+      </li>
+      </ul>
+  </div>
+    </div>
+  </div>
+</div>
