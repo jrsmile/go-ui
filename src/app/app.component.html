@@ -12,6 +12,19 @@
   </header>
   <div class="content-container">
     <div class="content-area">
+      <clr-datagrid>
+        <clr-dg-column>Blogger's Name</clr-dg-column>
+        <clr-dg-column>Blog URL</clr-dg-column>
+        <clr-dg-column>Twitter Handle</clr-dg-column>
+        
+        <clr-dg-row *ngFor="let person of people">
+            <clr-dg-cell>{{person.name}}</clr-dg-cell>
+            <clr-dg-cell><a href>{{person.blogurl}}</a></clr-dg-cell>
+            <clr-dg-cell>{{person.twitter}}</clr-dg-cell>
+        </clr-dg-row>
+    
+        <clr-dg-footer>{{people.length}} users</clr-dg-footer>
+    </clr-datagrid>
     </div>
     <clr-vertical-nav>
         <a clrVerticalNavLink routerLink="./charmander" routerLinkActive="active">Charmander</a>
